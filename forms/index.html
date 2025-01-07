@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="#">
+        <h1>Questionaire</h1>
+        <p>Please enter the information needed.</p>
+        <div class="personal-info">
+            <div class="personal first-name">
+                <label for="f-name">First Name</label>
+                <input type="text" name="f-name" id="f-name"
+                placeholder="Jane" required>
+            </div>
+            <div class="personal last-name">
+                <label for="l-name">Last Name</label>
+                <input type="text" name="l-name" id="l-name"
+                placeholder="Doe" required>
+            </div>
+            <div class="personal phone">
+                <label for="phone-number">Phone Number</label>
+                <input type="tel" name="phone-number" id="phone-number" placeholder="(123) 456-7890" required>
+            </div>
+            <div class="personal email">
+                <label for="email">Email Address</label>
+                <input type="email" name="email" id="email" placeholder="janedoe@email.com" required>
+            </div>
+        </div>
+
+        <div class="questions">
+            <div class="options">
+                <label for="select">Choose from one to 10 on your entree: </label>
+                <select name="score-rating" id="score-rating">
+                    <option value="0"></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            <div class="check">
+                <label for="boolean">Did you like your meal?</label>
+                <input type="checkbox" name="yes" id="yes">
+                <label for="yes">Yes</label>
+                <input type="checkbox" name="no" id="no">
+                <label for="no">No</label>
+            </div>
+        </div>
+
+        <input type="checkbox" name="disclaimer" id="disclaimer" required>
+        <label for="disclaimer">To confirm these details and to agree that we are going to use the information provided for advertising purposes, please click on the checkbox.</label>
+        <br>
+        <button class="submit">Submit</button>
+    </form>
+</body>
+</html>
