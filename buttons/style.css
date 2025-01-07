@@ -1,0 +1,42 @@
+/* universal styling for buttons */
+button {
+    border: none;
+    width: 5rem;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* focused styling for unique buttons */
+.red-white {
+    color: white;
+    background-color: red;
+}
+
+.success {
+    color: white;
+    background-color: green;
+}
+
+/* effects for buttons when interacted */
+.red-white:hover {
+    color: red;
+    background-color: white;
+}
+
+.red-white:active {
+    border: 1px solid red;
+    background-color: white;
+    color: red;
+}
+
+.success:hover {
+    color: green;
+    background-color: white;
+}
+
+.success:active {
+    border: 1px solid green;
+    background-color: white;
+    color: green;
+}
